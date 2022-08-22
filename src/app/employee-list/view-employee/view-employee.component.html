@@ -1,0 +1,73 @@
+<style>
+  .list-span{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 8px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .lable{
+    width: fit-content; 
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  .value{
+    width: max-content;
+    margin: 0 -1px;
+  }
+  .col{
+    margin: 5px 10px;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+</style>
+
+<div class="">
+  <div class="col-10 h-auto mx-auto mt-5 border border-1 fs-5 p-5" >
+    <h1 style="text-align: center;"> Details for Employee ID : {{ employee.id }}</h1>
+  
+    <div class="row">
+      <div class="col">
+        <span class="lable list-span">First Name </span>
+        <span class="value list-span"> {{ employee.FirstName }}</span>
+      </div>
+      <div class="col">
+        <span class="lable list-span">Middle Name </span>
+        <span class="value list-span"> {{ employee.MiddleName }}</span>
+      </div>
+      <div class="col">
+        <span class="lable list-span">Last Name </span>  
+        <span class="value list-span"> {{ employee.lastName }}</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span class="lable list-span">Employee Type </span>       
+        <span class="value list-span"> {{ employee.EmployeeType }}</span>
+      </div>
+      <div class="col">
+        <span class="lable list-span">Gender </span>    
+        <span class="value list-span"> {{ employee.Gender }}</span>
+      </div>
+      <div class="col">
+        <span class="lable list-span">Contact Number </span>
+        <span class="value list-span"> {{ employee.EmployeeType }}</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span class="lable list-span">Address </span>   
+        <span class="value list-span"> {{ employee.Address }}</span>
+      </div>
+      <div class="col">
+        <span class="lable list-span">Pincode </span>   
+        <span class="value list-span"> {{ employee.Pincode }}</span>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn btn-primary col-3 mx-auto mt-5" (click)="goBack()">Dashboard</button>
+    </div>
+
+  </div>
+</div>
